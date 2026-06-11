@@ -5,6 +5,9 @@ import com.br.fiap.totvs.model.domain.enumeration.NivelAlerta;
 import java.util.UUID;
 
 public class Alerta {
+
+    // SIstema para algo critico que acontecer
+
     private String id;
     private NivelAlerta nivel;
     private String mensagem;

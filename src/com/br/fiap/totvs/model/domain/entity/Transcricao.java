@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Transcricao {
+
+    //Audio passa pelo speck to text, esse texto entra primeiramente nessa classe
+
     private String id;
     private String conteudoTexto;
     private int duracao; // em segundos
@@ -17,12 +20,27 @@ public class Transcricao {
     }
 
     public String getConteudo() { return conteudoTexto; }
+
     public int getDuracao() { return duracao; }
 
+    public double getQualidadeAudio() {
+        return qualidadeAudio;
+    }
+
+    public String getId() {
+        return id;
+    }
+
     public double calcularQualidade() {
-        // Lógica simples: textos maiores = mais completos
+
+        //Conteudo veio ""
         if (conteudoTexto == null || conteudoTexto.isBlank()) return 0.0;
-        return Math.min(conteudoTexto.split("\\s+").length / 100.0, 1.0);
+
+        // Conta as palavras separando por espaços em branco
+        int qtdPalavras = conteudoTexto.split("\\s+").length;
+
+        // Regra: divide por 100.0. Se der mais de 1.0, o Math.min limita o teto em 1.0 (100%)
+        return Math.min(qtdPalavras / 100.0, 1.0);
     }
 
     public Map<String, Object> getMetricas() {
