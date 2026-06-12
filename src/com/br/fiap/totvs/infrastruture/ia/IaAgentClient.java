@@ -8,14 +8,14 @@ import com.br.fiap.totvs.model.domain.enumeration.TipoInsight;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GemineClient implements IaCliente {
+public class IaAgentClient implements IaCliente {
 
 
     //simulaçãoo
 
     @Override
     public List<InsightComercial> extrairInsghtComercial(Transcricao transcricao) {
-        System.out.println("[Infraestrutura] 📡 Conectando ao servidor do Google Gemini para analisar o texto...");
+        System.out.println("[Infraestrutura] Conectando ao servidor do Google Gemini para analisar o texto...");
 
         List<InsightComercial> insightsIdentificados = new ArrayList<>();
         String texto = transcricao.getConteudo().toLowerCase();

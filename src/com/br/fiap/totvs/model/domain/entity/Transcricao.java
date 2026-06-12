@@ -39,7 +39,7 @@ public class Transcricao {
         // Conta as palavras separando por espaços em branco
         int qtdPalavras = conteudoTexto.split("\\s+").length;
 
-        // Regra: divide por 100.0. Se der mais de 1.0, o Math.min limita o teto em 1.0 (100%)
+        // divide por 100.0. Se der mais de 1.0, o Math.min limita o teto em 1.0 (100%)
         return Math.min(qtdPalavras / 100.0, 1.0);
     }
 

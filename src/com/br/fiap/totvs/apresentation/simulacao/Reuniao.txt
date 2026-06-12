@@ -1,0 +1,13 @@
+[00:02] Vendedor (TOTVS): Fala, Maurício! Tudo bem? Estou ligando para entender como estão as coisas com o fechamento do trimestre e se a última atualização do nosso ERP rodou certinho aí na operação de vocês.
+
+[00:45] Cliente (Maurício): Olha, para ser bem sincero, não está nada bem. A nossa diretoria está muito insatisfeita com os custos de customização dessa última versão. Inclusive, fomos abordados pela equipe comercial da SAP na semana passada e eles apresentaram uma proposta de migração agressiva.
+
+[01:15] Vendedor (TOTVS): Entendo perfeitamente a preocupação com custos, Maurício, mas lembre-se que a nossa aderência fiscal ao mercado brasileiro é nativa. Se vocês forem para a concorrência agora, o custo oculto de implementação vai ser gigantesco.
+
+[01:50] Cliente (Maurício): Eu sei, mas a decisão não é só minha. O pessoal do financeiro já abriu uma planilha para comparar vocês com a Senior também. Eles alegam que para o nosso modelo de distribuição atual, o sistema deles é mais leve. A verdade é que a ordem que recebi de cima é abrir um chamado para entender as penalidades se a gente decidir cancelar o contrato de suporte antes do fim do ano. Queremos migrar o quanto antes se a TI deles aprovar o escopo.
+
+[02:30] Vendedor (TOTVS): Maurício, não faça isso sem antes me deixar desenhar uma contraproposta de renovação com o nosso gerente de contas. Consigo revisar as taxas de suporte e incluir o novo módulo de Inteligência Artificial Cognitive sem custo adicional por seis meses. Me dá até amanhã?
+
+[03:10] Cliente (Maurício): Tudo bem, vou segurar a reunião com a diretoria até amanhã à tarde, mas o cenário está bem crítico por aqui. Fico no aguardo do seu e-mail.
+
+cancelar , vou cancelar de novo e devo, nao sei
