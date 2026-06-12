@@ -1,8 +1,5 @@
 === RELATÓRIO DE INSIGHTS  ===
-ID Reunião: 
-Cliente   : 
-Total de Insights: 3
+ID Reunião: h
+Cliente   : g
+Total de Insights: 0
 ---------------------------------------
-➔ [CHURN] -> Gatilho Local: Termos de insatisfação detectados.
-➔ [UPSELL] -> Gatilho Local: Termos de expansão detectados.
-➔ [CONCORRENTE] -> Gemini AI: Alerta de menção à concorrência detectado no fluxo do diálogo.

@@ -2,7 +2,7 @@ package com.br.fiap.totvs.model.domain.entity;
 
 import com.br.fiap.totvs.model.domain.enumeration.TipoInsight;
 
-public class    InsightComercial {
+public class InsightComercial {
 
     //Resultado apos a analise da IA
 

@@ -4,6 +4,7 @@ import com.br.fiap.totvs.infrastruture.ia.IaAgentClient;
 import com.br.fiap.totvs.model.domain.contract.IaCliente;
 import com.br.fiap.totvs.model.domain.entity.*;
 import com.br.fiap.totvs.model.domain.enumeration.NivelAlerta;
+import com.br.fiap.totvs.model.domain.enumeration.TipoInsight;
 import com.br.fiap.totvs.model.domain.enumeration.TipoReuniao;
 import com.br.fiap.totvs.model.domain.service.AnalisadorService;
 
@@ -23,6 +24,23 @@ public class ProcessarReuniaoService {
         reuniao.setTranscricao(transcricao);
 
         analisadorService.executarAnaliseLocal(reuniao);
+
+        // conta quantos insights de churn foram detectados
+        int totalChurns = (int) reuniao.getInsights().stream().filter(i -> i.getTipo() == TipoInsight.CHURN).count();
+
+        RelatorioVendas relatorio = new RelatorioVendas("Mensal");
+        relatorio.gerar(totalChurns);
+
+        // se houver churn, dispara o alerta usando o método enviar() que já existe
+        if (totalChurns > 0) {
+            Alerta alerta = new Alerta(
+                    NivelAlerta.CRITICO,
+                    "Cliente '" + nomeCliente + "' com risco de churn detectado!",
+                    "diretor.comercial@totvs.com"
+            );
+            alerta.enviar(); // já imprime no console
+        }
+
 
         RelatorioReuniaoDTO dto = new RelatorioReuniaoDTO(reuniao.getId(), reuniao.getNomeCliente());
 
